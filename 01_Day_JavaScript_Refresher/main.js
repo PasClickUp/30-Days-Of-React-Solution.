@@ -62,8 +62,17 @@ itCompanies.forEach(company => console.log(company))
 //11. Change each company name to uppercase one by one and print them out
 itCompanies.forEach(company => console.log(company.toUpperCase()))
 //12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
+console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]}, and ${itCompanies[6]}, are big IT companies.`)
 //13. Check if a certain company exists in the itCompanies array.If it exist return the company else return a company is not found
+let companyToCheck = 'Amazon'
+let CheckCompany = itCompanies.indexOf(companyToCheck)
+CheckCompany != -1 ? console.log(companyToCheck) : console.log('company is not found')
 //14. Filter out companies which have more than one 'o' without the filter method
+for (let i = 0; i < itCompanies.length; i++) {
+    if (itCompanies[i].split('o').length - 1 >= 2) {
+        console.log(itCompanies[i])
+    }
+}
 //15. Sort the array using sort() method
 //16. Reverse the array using reverse() method
 //17. Slice out the first 3 companies from the array
