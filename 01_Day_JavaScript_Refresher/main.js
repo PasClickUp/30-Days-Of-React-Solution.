@@ -74,11 +74,21 @@ for (let i = 0; i < itCompanies.length; i++) {
     }
 }
 //15. Sort the array using sort() method
+let sortedCompanies = itCompanies.sort()
 //16. Reverse the array using reverse() method
+let reversedCompanies = itCompanies.reverse()
 //17. Slice out the first 3 companies from the array
+let firstThree = itCompanies.slice(0, 3)
 //18. Slice out the last 3 companies from the array
+let lastThree = itCompanies.slice(4)
 //19. Slice out the middle IT company or companies from the array
+let middleIt = itCompanies.slice(3, 4)
 //20. Remove the first IT company from the array
+let removeFirstIt = itCompanies.shift()
 //21. Remove the middle IT company or companies from the array
+let removeMiddleIt = itCompanies.splice(2, 1)
 //22. Remove the last IT company from the array
+let removeLastIt = itCompanies.pop()
 //23. Remove all IT companies
+let removeAllIt = itCompanies.splice(0, itCompanies.length)
+console.log(itCompanies) // []
